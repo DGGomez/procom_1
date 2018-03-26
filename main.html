@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type"
+      content="text/html; charset=utf-8" />
+    <title>Lab 1</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function renderStuff(){
+        let div = document.getElementById('content');
+        let n = document.getElementById('number').value;
+        for(let i =0; i<n; i++) {
+          div.innerHTML += '<div class="card"><div class="card-body">Basic card</div></div>'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <div style="text-align:center">
+        <h1>Day 1</h1>
+      </div>
+      <hr>
+      <div>
+        <form>
+  Number: <input id="number" type="text" name="fname"><br>
+
+  <button type="button" onclick="renderStuff()">Do Stuff</button>
+</form>
+
+      </div>
+      <div id="content">
+      </div>
+    </div>
+  </body>
+</html>
